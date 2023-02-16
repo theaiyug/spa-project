@@ -1,0 +1,1005 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+    
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    
+    
+
+}
+#navlinks a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: gilroy;
+    color: black;
+    padding: 1.1rem;
+    position: relative;
+}
+#navlinks a::after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 0.175rem;
+   left: 0;
+   bottom: 0;
+   background:#18bf8dc3;  
+   transform: scale(0,1);
+   transition: transform 0.3s ease;  
+}
+#navlinks a:hover::after{
+   transform: scale(1,1);  
+}
+
+@keyframes border {
+    from{
+        border-bottom: 0%;
+    }
+    to{
+        border-bottom: 1000%;
+    }
+}
+
+#navlinks{
+    display: flex;
+    gap: 2.5rem;
+}
+#navlinks i{
+    color: black;
+    padding-right: 9px;
+}
+#nav-btn button{
+    padding: 0.2rem 1rem;
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#nav-btn button i{
+    padding: 7px;
+}
+#nav-btn button::before{
+    content: '';
+    position: absolute;
+    background-color: #18bf8dc3;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    z-index: -1;
+}
+#nav-btn button:hover::before{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+#nav-btn button a{
+    text-decoration: none;
+    font-family: gilroy;
+    font-size: 1rem;
+    color: black;
+}
+
+#page-1{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/animation_500_ldvan52x.gif);
+    margin:0;   
+    padding:0;
+    overflow:hidden;
+}
+#p1section{
+ display: flex;
+}
+#pleft-1{
+    
+    width: 50%; 
+    padding-left: 70px;
+   
+    
+}
+#pright-1{
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#pright-1 h2{
+    margin-top: 90px;
+    font-size: 2rem;
+    font-family: gilroy;
+    color: rgb(114, 211, 151);
+    font-family: 'Syncopate', sans-serif;
+   
+    
+}
+#pright-1 h1{
+    
+    color: #4c9c31; 
+    font-size: 6rem; 
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+    font-family: 'Cabin Sketch', cursive;
+
+}
+.roller{
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 2.2rem; 
+    color: #18bf8dc3;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+  
+  #spare-time{
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #0f0f0f;
+    
+  }
+  
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;  
+  }
+  
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    72.5%{
+      top: -12.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 2.125rem;
+  }
+    
+    .roller{
+    height: 2.6rem; 
+    line-height: 2.125rem;  
+    }
+    
+    #spare-time {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .roller #rolltext {  
+    animation: slide-mob 5s infinite;  
+  }
+    
+    @keyframes slide-mob {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -2.125rem;    
+    }
+    50%{
+      top: -4.25rem;
+    }
+    72.5%{
+      top: -6.375rem;
+    }
+  }
+  }
+
+#p1-btn{
+    display: flex;
+    justify-content: center;
+}
+#pright-1 button{
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 50px;
+    width: 20rem;
+}
+#pright-1 button::before{
+    content: '';
+    position: absolute;
+    background-color: #18bf8dc3;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    z-index: -1;
+}
+#pright-1 button:hover::before{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+#pright-1 button a{
+    
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: black;
+}
+#pright-1 button i{
+    padding: 7px;
+}
+
+
+#page-2{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    margin-top: -50px;
+}
+.waves {
+    width: 100%;
+    height: 15vh;
+    min-height: 100px;
+    max-height: 150px;
+    
+    margin-top: -550px;
+    bottom: 0;
+  }
+  
+  .parallax > use {
+    animation: wave 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  }
+  
+  @keyframes wave {
+    0% { transform: translate3d(-90px,0,0) }
+    100% { transform: translate3d(85px,0,0) }
+  }
+  
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+  }
+
+  #waveanim2{
+    transform: scale(1,-1);
+    margin-top:-10px ;
+  }
+  #p2-content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #0bc0bd;
+    margin-top: -5px;
+  }
+  #p2-left{
+    width: 60%;
+    padding-top: 80px;
+  }
+  #p2-left h1{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-bottom: 30px;
+    font-weight: 600;
+    color: #0f0f0f;
+    
+  }
+  #p2l-content{
+    width: 100%;
+    height: 80%;
+    background-color: #edf8efef;
+    border-radius: 80px;
+    margin-left: -100px;
+    padding: 50px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  #p2l-content p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: gilroy;
+    color: rgb(0, 0, 0);
+    line-height: 50px;
+    text-align: center;
+  }
+
+  #p2l-content button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 50px;
+    padding: 10px ;
+    
+    background-color:transparent ;
+   
+}
+#p2l-content button::before{
+    content: '';
+    position: absolute;
+    background-color: #18bf8dc3;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    z-index: -1;
+}
+#p2l-content button:hover::before{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+#p2l-content button a{
+    
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: black;
+}
+#p2l-content button i{
+    padding-left: 20px;
+}
+
+#page-3{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#p3-top h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: 1.1rem;
+  position: relative;
+}
+
+
+#p3-top h1::after{
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 0.175rem;
+ left: 0;
+ bottom: 0;
+ background:#18bf8dc3;  
+ transform: scale(0,1);
+ transition: transform 0.3s ease;  
+}
+#p3-top h1:hover::after{
+ transform: scale(1,1);  
+}
+
+@keyframes border {
+  from{
+      border-bottom: 0%;
+  }
+  to{
+      border-bottom: 1000%;
+  }
+}
+#p3-top h1 i{
+ padding-left: 25px;
+}
+#cards{
+  height: 80vh;
+ 
+}
+
+
+.visuallyhidden {
+  position: absolute;
+  z-index: -1;
+  right: 0; 
+  opacity: 0;
+  
+}
+
+
+
+.container {
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 2em;
+  background: rgba(0,0,0,.1)
+}
+
+.card-carousel {
+  --card-width: 80%;
+  --card-max-width: 380px;
+  --card-height: 450px;
+  --carousel-min-width: 600px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter .3s ease;
+}
+
+@media screen and (max-width: 640px) {
+  .card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+}
+
+.card-carousel.smooth-return {
+  transition: all .2s ease;
+}
+
+.card-carousel .card {
+  background: rgb(255, 255, 255);
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 1em;
+  min-width: 250px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0,0,0,.5);
+  transition: inherit;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 1em;
+  filter: brightness(.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: gilroy;
+}
+
+.card-carousel .card button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 50px;
+  padding: 7px 15px ;
+  opacity: 70%;
+  background-color:transparent ;
+ 
+}
+.card-carousel .card button::before{
+  content: '';
+  position: absolute;
+  background-color: #18bf8dc3;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+  z-index: -1;
+}
+.card-carousel .card button:hover::before{
+  
+  width: 100%;
+  height: 100%;
+  
+}
+.card-carousel .card button a{
+  
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  color: black;
+  
+}
+.card-carousel .card button i{
+  padding-left: 10px;
+}
+.card.highlight {
+  filter: brightness(1)
+}
+.card-carousel .card button h3{
+  color: #0f0f0f;
+  font-family: gilroy;
+ 
+}
+
+.card:nth-of-type(1) .image-container {
+    background-image: url("../images/foot-massage-heel-squeeze.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+.card:nth-of-type(2) .image-container {
+  background-image: url("../images/football-massage-arch-rubs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card:nth-of-type(3) .image-container {
+  background-image: url("../images/foot-massage-toe-massage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card:nth-of-type(4) .image-container {
+  background-image: url("../images/AdobeStock_175896103_1200x630.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card:nth-of-type(5) .image-container {
+  background-image: url("../images/foot-massage-knuckle-or-fist-work.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+.image-container {
+  width: 12em;
+  height: 12em;
+  position: relative;
+  background-size: cover;
+  margin-bottom: 2em;
+  border-radius: 100%;
+  padding: 1em;
+  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+
+
+  
+}
+
+.image-container::after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 120%;
+  border: solid 3px rgba(0,0,0,.1);
+  border-radius: 100%;
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
+
+#page-4{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  
+}
+
+#p4-left{
+  width: 50%;
+  display: flex;
+  flex-direction:column ;
+  justify-content: space-around;
+  align-items: center;
+}
+#ltop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#p4-left #ltop h4{
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #72D397;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+#p4-left #ltop h1{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 50px;
+  /* font-family: 'Montserrat Alternates', sans-serif; */
+  font-family: gilroy;
+  font-weight: 500;
+  padding-bottom: 20px;
+  
+}
+#p4-left #ltop i{
+  padding-left: 20px;
+}
+#p4-left #ltop h2{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+  /* font-family: 'Montserrat Alternates', sans-serif; */
+  font-family: gilroy;
+  font-weight: 500;
+  width: 400px;
+  opacity: 70%;
+  color: #477b5b;
+  padding-bottom: 30px;
+}
+#p4lcontent{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: gilroy;
+}
+#p4lcontent h1{
+  font-size: 25px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#p4lcontent p{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+#p4-right{
+  width: 50%;
+  font-family: gilroy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  border:2px solid #0c0c0c;
+  padding: 130px 100px;
+  background-color:#addddc ;
+  border-radius: 50px;
+}
+#login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 25px;
+  color: #131212;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #0e0d0d;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #0c0c0c;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #066469;
+  font-size: 15px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #00a8fb;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  margin-left: 35%;
+  margin-top: 35%;
+}
+.login-box form a:hover{
+  background-color: #0bc0bd55;
+  
+}
+
+
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+
+}
+
+.selectdiv:after {
+  content: '';
+  font: 17px "Consolas", monospace;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 11px;
+  /*Adjust for position however you want*/
+  
+  top: 18px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  /*left line */
+  
+  position: absolute;
+  pointer-events: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #080808;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+#page-5{
+  height: 125vh;
+  width: 100vw;
+  margin-top: 80px;
+  background-color: #E5E5E5;
+  padding: 0px 50px ;
+  padding-top: 50px;
+}
+#location{
+  display: flex;
+  gap: 50px;
+}
+#loc-box{
+  width: 33.33%;
+}
+#loc-box h2{
+  
+  
+  text-align: center;
+  
+  font-family: gilroy;
+}
+#loc-box h2{
+  font-size: 40px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: gilroy;
+  color: black;
+  padding:20px;
+  position: relative;
+}
+#loc-box h2::after{
+ content: '';
+ position: absolute;
+ 
+ width: 100%;
+ height: 0.175rem;
+ left: 0;
+ bottom: 0;
+ background:#18bf8dc3;  
+ transform: scale(0,1);
+ transition: transform 0.3s ease;  
+}
+#loc-box h2:hover::after{
+ transform: scale(1,1);  
+}
+#loc-box h3{
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  padding:20px;
+  font-family: gilroy;
+  opacity: 50%;
+}
+#page-5 h1{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 60px;
+  /* font-family: 'Montserrat Alternates', sans-serif; */
+  font-family: gilroy;
+  font-weight: 500;
+  padding-bottom: 20px;
+  
+}
+#page-5 h1 i{
+ padding-left: 50px;
+ padding-bottom: 70px;
+}
+
+#footer{
+  height: 50vh;
+  width: 100vw ;
+  background-color: #ADDDDC;
+  padding: 50px;
+  display: flex;
+}
+#c1{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#c1 p{
+  width: 80%;
+  padding: 30px 0px;
+  font-family: gilroy;
+  font-size: 20px;
+  text-align: center;
+}
+#c1 h4{
+  
+  padding: 30px 0px;
+  font-family: gilroy;
+  font-size: 15px;
+  text-align: center;
+}
